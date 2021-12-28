@@ -8,7 +8,7 @@ const selectionComputer = document.querySelector('.computer__selection');
 let playerScore = 0;
 let computerScore = 0;
 
-// Start Game when user clicks on an image
+
 images.forEach((image) =>
   image.addEventListener('click', () => {
     if (playerScore >= 5 || computerScore >= 5) {
@@ -46,27 +46,27 @@ function playRound(playerSelection, computerSelection) {
 
   if (playerSelection === 'Rock') {
     if (computerSelection === 'Paper') {
-      log = 'You Lose! Paper beats Rock';
+      log = 'LOSER ! PAPER BEATS ROCK';
     } else if (computerSelection === 'Scissors') {
-      log = 'You Win! Rock beats Scissors';
+      log = 'WINNER WINNER CHICKEN DINNER ! ROCK BEATS SCISSORS';
     } else {
       log = "It's a tie";
     }
   } else if (playerSelection === 'Paper') {
     if (computerSelection === 'Scissors') {
-      log = 'You Lose! Scissors beats Paper';
+      log = 'LOSER ! SCISSORS BEATS PAPER';
     } else if (computerSelection === 'Rock') {
-      log = 'You Win! Paper beats Rock';
+      log = 'WINNER WINNER CHICKEN DINNER ! PAPER BEATS ROCK';
     } else {
       log = "It's a tie";
     }
   } else if (playerSelection === 'Scissors') {
     if (computerSelection === 'Rock') {
-      log = 'You Lose! Rock beats Scissors';
+      log = 'LOSER ! ROCK BEATS SCISSORS';
     } else if (computerSelection === 'Paper') {
-      log = 'You Win! Scissors beats Paper';
+      log = 'WINNER WINNER CHICKEN DINNER ! SCISSORS BEATS PAPER';
     } else {
-      log = "It's a tie";
+      log = "TIE";
     }
   }
 
@@ -86,9 +86,9 @@ function game(playerSelect) {
 
   let roundResult = playRound(playerSelection, computerSelection);
 
-  if (roundResult.search('You Win!') > -1) {
+  if (roundResult.search('WINNER WINNER CHICKEN DINNER !') > -1) {
     playerScore++;
-  } else if (roundResult.search('You Lose!') > -1) {
+  } else if (roundResult.search('LOSER !') > -1) {
     computerScore++;
   }
 
@@ -99,13 +99,13 @@ function game(playerSelect) {
   selectionComputer.appendChild(createParagWithText(computerSelection));
 
   if (playerScore >= 5 && computerScore < 5) {
-    message.textContent = 'Game Over. You Win!';
+    message.textContent = 'GAME OVER YOU WON!';
     setTimeout(function (){
         location.reload();
     }, 5000);
 
   } else if (playerScore < 5 && computerScore >= 5) {
-    message.textContent = 'Game Over. You Lose!';
+    message.textContent = 'GAME OVER YOU LOSS!';
     setTimeout(function (){
         location.reload();
     }, 3000);
