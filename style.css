@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Shizuru', cursive;
+    background-color: #F90716;
+}
+
+.div{
+    display: block;
+}
+/*Title section*/
+.navbar__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    
+}
+
+.navbar__container a{
+    text-decoration: none;
+    color: #F6F6F6;
+    text-transform: uppercase;
+}
+
+/*Score section*/
+.score{
+    margin-bottom: 100px;
+}
+
+.score__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.score__container p {
+    color: #F6F6F6;
+    font-family: 'Rock 3D', cursive;
+}
+
+.score__result{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 50px 50px;
+    color: #F6F6F6;
+}
+
+#score__player{
+    padding-right: 1rem;
+}
+
+#score__computer{
+    padding-left: 1rem;
+}
+
+/*Choices sectioin*/
+.choice{
+    max-width: 1376px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #F6F6F6;
+}
+
+.choice__container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+.choice__container--img{
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.choice__container--img img{
+    width: 350px;
+    height: 350px;
+    
+    
+}
+
+.choice__container--img:hover{
+    top: -5px;
+}
+
+
+
+.choice__container--text{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/*Game log*/
+.game__log{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.game__log--title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 50px;
+    font-size: 2rem;
+    color: #F6F6F6;
+}
+

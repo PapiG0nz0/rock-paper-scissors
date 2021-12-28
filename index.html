@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissor</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Title section start-->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="index.html" id="navbar__logo">Rock Paper  Scissors!</a>
+            </div>
+        </nav>
+        <!--Title section end-->
+
+        <!--Score section start-->
+        <div class="score">
+            <div class="score__container">
+                <p class="score__player">0</p>
+                <p class="score__display">-</p>
+                <p class="score__computer">0</p>
+            </div>
+            <div class="score__result"></div>
+        </div>
+        <!--Score section end-->
+
+        <!--Choices start-->
+        <div class="choice">
+            <div class="choice__container">
+                <div class="choice__container--img " id="rock" data-image="rock">
+                    <img src="imgs/rock.png" class="img">
+                    <h1 class="choice__container--text">ROCK</h1>
+                </div>
+                <div class="choice__container--img" id="paper" data-image="paper">
+                    <img src="imgs/paper.png" class="img">
+                    <h1 class="choice__container--text">PAPER</h1>
+                </div>
+                <div class="choice__container--img" id="scissor" data-image="scissors">
+                    <img src="imgs/scissors.png" class="img">
+                    <h1 class="choice__container--text">SCISSORS</h1>
+                </div>
+            </div>
+        </div>
+        <!--Choices end-->
+
+        <!--Game Log Start-->
+        <div class="game__log">
+            <div class="game__log--title">
+                <h1>PLAYER</h1>
+                <div class="player__selection">
+                    <!--<p>Rock</p>-->
+                </div>
+            </div>
+            <div class="game__log--title">
+                <h1>COMPUTER</h1>
+                <div class="computer__selection">
+                    <!--<p>Rock</p>-->
+                </div>
+            </div>
+        </div>
+        <!--Game Log End-->
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
